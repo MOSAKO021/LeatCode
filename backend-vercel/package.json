@@ -1,0 +1,33 @@
+{
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vercel/examples.git"
+  },
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@types/node": "^17.0.42",
+    "@vercel/node": "^2.9.6",
+    "typescript": "^4.7.3"
+  },
+  "name": "backend-vercel",
+  "description": "Simple Node.js + Vercel example that returns a \"Hello World\" response.",
+  "bugs": {
+    "url": "https://github.com/vercel/examples/issues"
+  },
+  "homepage": "https://github.com/vercel/examples#readme",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "node-fetch": "^3.3.2",
+    "nodemon": "^3.1.9"
+  }
+}
