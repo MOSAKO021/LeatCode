@@ -6,22 +6,22 @@ import { FaChartSimple, FaChartLine, FaMagnifyingGlass, FaTrophy, FaMedal, FaGit
 import { toast } from "react-toastify";
 
 const App = () => {
-  
+
   const [userData, setUserData] = useState(null);
   const [userName, setUserName] = useState("");
   const [isLoading, setIsLoading] = useState(false);  // State to manage loading
 
   const fetchData = async (userName) => {
-    
+
     try {
       setIsLoading(true);  // Start loading when the request is made
 
       const response = await axios.get(`https://leetcode-back.vercel.app/${userName}`);
-      
+
       setUserData(response.data);
     } catch (error) {
       console.error("Error fetching data:", error);
-      
+
       toast.error(error.response.data.message || "An error occurred.");
       setTimeout(() => {
         window.location.href = '/';
@@ -57,20 +57,20 @@ const App = () => {
   if (!userData) {
     return (
       <div className="min-h-screen bg-gray-950 flex items-center justify-center">
-          <div className="flex items-center bg-gray-100 rounded-full px-4 py-2 mb-5">
-            <input
-              type="text"
-              placeholder="Enter Leetcode Username"
-              value={userName}
-              onChange={(e) => setUserName(e.target.value)}
-              onKeyDown={handleKeyDown}  
-              className="flex-grow bg-transparent outline-none text-black font-semibold"
-            />
-            <FaMagnifyingGlass
-              className="text-gray-500 ml-2 w-7 h-7 cursor-pointer border-l-2 border-black py-1 hover:text-black"
-              onClick={handleSearch}
-            />
-          </div>
+        <div className="flex items-center bg-gray-100 rounded-full px-4 py-2 mb-5">
+          <input
+            type="text"
+            placeholder="Enter Leetcode Username"
+            value={userName}
+            onChange={(e) => setUserName(e.target.value)}
+            onKeyDown={handleKeyDown}
+            className="flex-grow bg-transparent outline-none text-black font-semibold"
+          />
+          <FaMagnifyingGlass
+            className="text-gray-500 ml-2 w-7 h-7 cursor-pointer border-l-2 border-black py-1 hover:text-black"
+            onClick={handleSearch}
+          />
+        </div>
       </div>
     );
   }
@@ -91,9 +91,9 @@ const App = () => {
   })) || [];
 
   return (
-    <div className="min-h-screen bg-gray-950 flex">
+    <div className="min-h-screen bg-gray-950 flex flex-col sm:flex-row">
       {/* Left Sidebar */}
-      <div className="w-1/4 bg-gray-900 hover:border-gray-200 border-2 hover:border-4 border-gray-500 m-5 p-5 rounded-2xl shadow-md sticky top-0 flex flex-col">
+      <div className="md:w-1/4 bg-gray-900 hover:border-gray-200 border-2 hover:border-4 border-gray-500 m-5 p-5 rounded-2xl shadow-md md:sticky top-0 flex flex-col">
         {/* Search Input */}
         <div className="flex items-center bg-transparent border-2 order-gray-100 rounded-full px-4 py-2 mb-5">
           <input
@@ -102,7 +102,7 @@ const App = () => {
             onChange={(e) => setUserName(e.target.value)}
             onKeyDown={handleKeyDown}  // Added here for Enter key press
             className="text-gray-100 ml-2 w-full h-full bg-transparent  outline-none py-1 hover:text-white"
-            />
+          />
           <FaMagnifyingGlass className="text-gray-200 ml-2 w-5 h-5 cursor-pointer hover:text-white" onClick={handleSearch} />
         </div>
 
@@ -225,7 +225,7 @@ const App = () => {
 
 
       {/* Right Main Content */}
-      <div className="flex-1 p-5 overflow-y-auto text-white" style={{ maxHeight: "calc(100vh)" }}>
+      <div className="flex-1 p-5 sm:mt-0 mt-4 overflow-y-auto text-white" style={{ maxHeight: "calc(100vh)" }}>
         <div className="bg-gray-900 hover:border-gray-200 p-5 border-2 hover:border-4 border-gray-500 shadow-md rounded-2xl mb-8">
           <h2 className="text-xl font-bold mb-4">Questions Solved</h2>
           <div className="grid grid-cols-4 gap-4">
