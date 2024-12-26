@@ -214,12 +214,15 @@ const App = () => {
 
         {/* Star on GitHub */}
         <div className="mt-auto">
-          <button className="flex items-center justify-center w-full bg-gray-200 text-gray-800 font-bold hover:bg-gray-900 hover:text-gray-200 hover:border-2 hover:border-gray-200 py-2 px-4 rounded-lg mt-4 ">
-            <FaStar className="w-5 h-5 mr-2" />
-            Star at Github
-            <FaGithub className="ml-2 w-5 h-5 mr-2" />
-          </button>
+          <a href="https://github.com/MOSAKO021/leetstats" target="_blank" rel="noopener noreferrer">
+            <button className="flex items-center justify-center w-full bg-gray-200 text-gray-800 font-bold hover:bg-gray-900 hover:text-gray-200 hover:border-2 hover:border-gray-200 py-2 px-4 rounded-lg mt-4">
+              <FaStar className="w-5 h-5 mr-2" />
+              Star at Github
+              <FaGithub className="ml-2 w-5 h-5 mr-2" />
+            </button>
+          </a>
         </div>
+
       </div>
 
 
