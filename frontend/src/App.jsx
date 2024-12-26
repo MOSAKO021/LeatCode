@@ -17,7 +17,7 @@ const App = () => {
       setIsLoading(true);  // Start loading when the request is made
       //
 
-      const response = await axios.get(`leatcode-backend.vercel.app/${userName}`);
+      const response = await axios.get(`https://leatcode-backend.vercel.app/${userName}`);
 
       setUserData(response.data);
     } catch (error) {
