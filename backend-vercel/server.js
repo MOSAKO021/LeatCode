@@ -45,7 +45,7 @@ const isValidUsername = async (username) => {
 };
 
 app.get('/:username', async (req, res) => {
-  const username = req.params.username || 'wolfofdst01'; // Default to 'wolfofdst01' if no username is provided
+  const username = req.params.username; 
 
   // Step 1: Check if the username is valid
   const validUser = await isValidUsername(username);  

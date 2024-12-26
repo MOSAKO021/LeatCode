@@ -1,4 +1,4 @@
-# LeetStats ✨ - Because Regular Stats are too Mainstream 🤣
+# LeetStats ✨ - Because Regular Stats are too Mainstream 
 
 Welcome to **LeetStats**! The absolutely, positively, ridiculously over-the-top stats app you never asked for but now can't live without. ✨
 
@@ -10,7 +10,7 @@ Picture this: You're solving problems on LeetCode, feeling like a coding ninja �
 
 ## Features that will blow your socks off 🧦
 
-- **Dynamic Loading** – Fancy loading spinner because staring at a blank screen is so last decade. 🔁
+- **Dynamic Loading** – Fancy* loading spinner because staring at a blank screen is so last decade. 🔁
 - **Top Languages** – Find out which language you speak the best… no, not French or Spanish… Python or JavaScript! 🚀
 - **Contest Stats** – Because we all love knowing how much better (or worse) we are compared to the rest of the world. 🥇
 - **Recent Submissions** – Remind yourself of the problem you failed 5 minutes ago. 😂
@@ -21,7 +21,7 @@ Picture this: You're solving problems on LeetCode, feeling like a coding ninja �
 
 1. Clone this masterpiece:  
    ```bash
-   git clone https://github.com/your-repo/leetstats.git
+   git clone https://github.com/MOSAKO021/leetstats.git
    ```
 
 2. Navigate to the project folder like you're Indiana Jones:
@@ -29,15 +29,28 @@ Picture this: You're solving problems on LeetCode, feeling like a coding ninja �
    cd leetstats
    ```
 
-3. Install dependencies (because nothing works out of the box, duh):
-   ```bash
-   npm install
-   ```
+3. Install dependencies for both frontend and backend (because nothing works out of the box, duh):
+   - **Backend**:  
+     ```bash
+     cd backend
+     npm install
+     ```
+   - **Frontend**:  
+     ```bash
+     cd ../frontend
+     npm install
+     ```
 
-4. Start the server and embrace the magic:
-   ```bash
-   npm start
-   ```
+4. Start the backend server and frontend app (like a pro):  
+   - **Backend**:  
+     ```bash
+     cd ../backend
+     node server
+     ```
+   - **Frontend**:  
+     ```bash
+     cd ../frontend
+     npm run
 
 5. Open your browser and visit [http://localhost:3000](http://localhost:3000). ✨
 
@@ -77,4 +90,5 @@ Thanks to my brain cells that survived long enough to make this project a realit
 ---
 
 _What are you waiting for? Go type in your LeetCode username and prepare to be amazed (or mildly amused). Enjoy! 🎉_
+
 
