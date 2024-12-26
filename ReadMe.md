@@ -1,12 +1,12 @@
-# LeetBoard ✨ - Because Regular Stats are too Mainstream 
+# LeatCode ✨ - Because Regular Stats are too Mainstream 
 
-Welcome to **LeetBoard**! The absolutely, positively, ridiculously over-the-top stats app you never asked for but now can't live without. ✨
+Welcome to **LeatCode**! The absolutely, positively, ridiculously over-the-top stats app you never asked for but now can't live without. ✨
 
-## What is LeetBoard? 🌐
+## What is LeatCode? 🌐
 
 Picture this: You're solving problems on LeetCode, feeling like a coding ninja 🏋️‍♂️, and suddenly you wonder, _"How many Easy problems have I crushed? How many Medium ones have I raged over? And why does Hard feel like a personal attack?"_
 
-**LeetBoard** swoops in like a superhero ✨⚡✨ to answer all those burning questions! Simply type in your LeetCode username, and BOOM ✨— your entire life (okay, just your LeetCode stats) is laid bare in all its glory.
+**LeatCode** swoops in like a superhero ✨⚡✨ to answer all those burning questions! Simply type in your LeetCode username, and BOOM ✨— your entire life (okay, just your LeetCode stats) is laid bare in all its glory.
 
 ## Features that will blow your socks off 🧦
 
@@ -21,12 +21,12 @@ Picture this: You're solving problems on LeetCode, feeling like a coding ninja �
 
 1. Clone this masterpiece:  
    ```bash
-   git clone https://github.com/MOSAKO021/LeetBoard.git
+   git clone https://github.com/MOSAKO021/LeatCode.git
    ```
 
 2. Navigate to the project folder like you're Indiana Jones:
    ```bash
-   cd LeetBoard
+   cd LeatCode
    ```
 
 3. Install dependencies for both frontend and backend (because nothing works out of the box, duh):
@@ -56,7 +56,7 @@ Picture this: You're solving problems on LeetCode, feeling like a coding ninja �
 
 6. Enter your LeetCode username, sit back, and bask in your glory (or cry over your stats, we don't judge).
 
-## Why Use LeetBoard? 🧐
+## Why Use LeatCode? 🧐
 
 1. You’re bored. 😎
 2. You want to flex your stats to your friends who are stuck at "Hello, World!". 🤡
