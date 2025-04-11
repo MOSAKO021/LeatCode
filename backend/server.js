@@ -48,6 +48,7 @@ const isValidUsername = async (username) => {
 app.get('/:username', async (req, res) => {
   const username = req.params.username; 
   console.log('Fetching data for user:', username);
+
   // Step 1: Check if the username is valid
   const validUser = await isValidUsername(username);  
   if (!validUser) {
@@ -250,6 +251,16 @@ app.get('/:username', async (req, res) => {
         }
       }`,
       variables: { username },
+    },
+    {
+      query: `query getStreakCounter {
+        streakCounter {
+          streakCount
+          daysSkipped
+          currentDayCompleted
+        }
+      }`,
+      variables: {},
     },
   ];
 

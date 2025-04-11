@@ -12,17 +12,13 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(false);  // State to manage loading
 
   const fetchData = async (userName) => {
-
     try {
       setIsLoading(true);  // Start loading when the request is made
-      //
-
       const response = await axios.get(`https://leatcode-backend.vercel.app/${userName}`);
-
+      console.log("username: ", userName);
       setUserData(response.data);
     } catch (error) {
       console.error("Error fetching data:", error);
-
       toast.error(error.response.data.message || "An error occurred.");
       setTimeout(() => {
         window.location.href = '/';
@@ -223,10 +219,7 @@ const App = () => {
             </button>
           </a>
         </div>
-
       </div>
-
-
 
       {/* Right Main Content */}
       <div className="flex-1 p-5 sm:mt-0 mt-4 overflow-y-auto text-white" style={{ maxHeight: "calc(100vh)" }}>
@@ -302,7 +295,7 @@ const App = () => {
                 className=""
               >
                 <li
-                  className={`relative flex items-center mb-1 justify-between p-3 rounded-lg shadow-sm border-2 transition ${submission.statusDisplay === "Accepted"
+                  className={`relative flex items-center justify-between mb-1 p-3 rounded-lg shadow-sm border-2 transition ${submission.statusDisplay === "Accepted"
                     ? "bg-teal-10 hover:bg-teal-200 border-teal-700 text-teal-700"
                     : submission.statusDisplay === "Wrong Answer"
                       ? "bg-red-10 hover:bg-red-200 border-red-700 text-red-700"
@@ -310,17 +303,13 @@ const App = () => {
                     }`}
                 >
                   <h3 className="font-bold flex-grow">{submission.title}</h3>
-                  <div className="absolute top-full left-0 mt-2 w-full p-3 bg-white rounded-lg shadow-lg z-10 hidden group-hover:block">
-                    <p className="text-sm text-gray-700">
-                      <span className="font-bold">Status:</span> {submission.statusDisplay}
-                    </p>
-                  </div>
+                  {/* Display status at the right */}
+                  <span className="font-semibold text-sm ml-4">{submission.statusDisplay}</span>
                 </li>
               </a>
             ))}
           </ul>
         </div>
-
 
       </div>
     </div>
