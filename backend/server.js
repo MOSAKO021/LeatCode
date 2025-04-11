@@ -5,7 +5,15 @@ const port = 3000;
 const cors = require('cors');
 const { log } = require('console');
 
-app.use(cors());
+// Define CORS options
+const corsOptions = {
+  origin: 'https://leatcode.vercel.app', // Allow only this origin
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify allowed methods
+  credentials: true, // Enable if your API requires credentials
+};
+
+// Apply CORS middleware with the defined options
+app.use(cors(corsOptions));
 
 // LeetCode GraphQL API URL
 const LEETCODE_API_URL = 'https://leetcode.com/graphql/';
