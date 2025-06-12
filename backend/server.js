@@ -53,6 +53,10 @@ const isValidUsername = async (username) => {
   }
 };
 
+app.get('/', (req, res) => {
+  res.send('pani chusko ra pulka!!');
+});
+
 app.get('/:username', async (req, res) => {
   const username = req.params.username; 
   console.log('Fetching data for user:', username);
